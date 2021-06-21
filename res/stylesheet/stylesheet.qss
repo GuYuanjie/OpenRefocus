@@ -1,1 +1,368 @@
+﻿/********************** MainWindow Style Sheet  *******************/
+QMainWindow
+{
+background-color:#1A1A1A;
+color:white;
+border:none;
+}
+QFrame#frameDot
+{
+border:none;
+}
+
+QFrame#frameBackground
+{
+background-color: #1A1A1A;
+border:none;
+}
+
+QFrame#frameBorder,#frameBackground
+{
+background-color:#1F1F1F;
+color:white;
+border:none;
+}
+
+QLabel
+{
+color: #FFFFFF;
+}
+
+/********************** MainTitleBar Style Sheet  *******************/
+QPushButton#pushButtonClose
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/close_normal.png);
+}
+
+QPushButton#pushButtonClose:hover
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/close_hover.png);
+}
+
+QPushButton#pushButtonMin
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/min_normal.png);
+}
+
+QPushButton#pushButtonMin:hover
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/min_hover.png);
+}
+
+
+QPushButton#pushButtonMax
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/max_normal.png);
+}
+
+QPushButton#pushButtonMax:hover
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/max_hover.png);
+}
+
+QPushButton#pushButtonNormal
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/normal_normal.png);
+}
+
+QPushButton#pushButtonNormal:hover
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/normal_hover.png);
+}
+
+QPushButton:hover
+{
+background-color: rgb(180, 85, 100);
+color:white;
+}
+
+QPushButton
+{
+background-color:rgb(84, 115, 135);
+color:white;
+font-size:12px;
+width: 150px;
+border-radius:2px;
+spacing:2px;
+padding: 0px 0px;
+}
+
+QScrollBar:vertical
+{
+background:#1A1A1A;
+padding-top:20px;
+padding-bottom:20px;
+padding-left:3px;
+padding-right:3px;
+border-left:1px solid #1A1A1A;;
+}
+QScrollBar::handle:vertical
+{
+background:#3F3F3F;
+border-radius:6px;
+min-height:80px;
+border-radius:4px;
+}
+QScrollBar::handle:vertical:hover
+{
+background:#3F3F3F;
+border-radius:4px;
+}
+
+QScrollBar::add-page
+{
+background:#1A1A1A;
+}
+QScrollBar::sub-page
+{
+background:#1A1A1A;
+}
+QScrollBar::add-line:vertical
+{
+background:url(none) center no-repeat;
+}
+QScrollBar::sub-line:vertical
+{
+background:url(none) center no-repeat;
+}
+
+/********************** ControlFoldWidget Style Sheet  *******************/
+QTreeWidget, QTabWidget > QWidget
+{
+background:transparent;
+color:white;
+border:none;
+}
+
+QTreeWidget::item:selected
+{
+background-color: #123456;
+color:white;
+}
+
+QTreeWidget::item
+{
+height:50px;
+}
+QTreeWidget::item:hover {
+show-decoration-selected:1;
+background-color: rgb(49, 58, 66);
+selection-background-color: rgb(49, 58, 66);
+color: rgb(255,255,255);
+}
+QTreeWidget::item:!selected:hover
+{
+background:rgba(0,0,0);
+}
+
+QTreeWidget::branch:selected
+{
+background-color: #123456;
+}
+
+/********************** ControlTabWidget Style Sheet  *******************/
+QTabBar::tab
+{
+min-width:100px;
+color: white;
+background-color:#1F1F1F;
+border: 0px solid;
+padding:6px;
+}
+
+QTabBar::tab:!selected
+{
+margin-top: 5px;
+}
+
+QTabBar::tab:selected
+{
+background-color:#2F2F2F;
+color: white;
+font-size:14px;
+font-weight:bold;
+border-bottom: 1px solid;
+border-bottom-color:darkred;
+}
+
+QTabWidget::pane
+{
+background-color:transparent;
+}
+*{
+outline:0px;
+}
+
+/********************** FrameControl Style Sheet  *******************/
+QFrame#frameApplication
+{
+border:1px solid #BBBBBB;
+border-radius:5px;
+}
+QFrame#frameApplication:hover
+{
+border:1px solid #FFFFFF;
+border-radius:5px;
+}
+
+QWidget#scrollAreaWidgetContents
+{
+background-color: #1A1A1A;
+border:none;
+}
+
+
+/********************** TableWidget Style Sheet  *******************/
+QLabel#labelTableText
+{
+font-family: Microsoft YaHei;
+font-size: 18px;
+color: #FFFFFF;
+}
+
+QHeaderView
+{
+background-color:transparent;
+}
+
+QHeaderView::section
+{
+border: none;
+background-color: #2B2B2B;
+font-family: Microsoft YaHei;
+font-size: 12px;
+color: #FFFFFF;
+text-align: center;
+min-height: 36px;
+max-height: 36px;
+}
+
+QTableWidget
+{
+border:0px solid;
+border-top-width:1px;
+border-top-style:solid;
+border-top-color:#5C8290;
+background-color:transparent;
+alternate-background-color: #2A2A2A;
+}
+
+QTableWidget::item
+{
+font-family: Microsoft YaHei;
+font-size: 10px;
+min-height: 36px;
+max-height: 36px;
+}
+
+QTableWidget::item:selected
+{
+out-line:none;
+}
+/********************** NoveControl Style Sheet  *******************/
+QPushButton#pushButtonCloseControl
+{
+border:none;
+background:rgba(255, 255, 255, 0);
+image: url(:/res/res/image/other/close.png);
+}
+
+/********************** SliderWidget Style Sheet  *******************/
+QFrame#frameSlider
+{
+border:none;
+background-color:#1A1A1A;
+}
+
+QPushButton#pushButtonLeft
+{
+border-image: url(:/res/res/image/left_arrow_normal.png);
+}
+
+QPushButton#pushButtonLeft:hover
+{
+border-image: url(:/res/res/image/left_arrow_hover.png);
+}
+
+QPushButton#pushButtonLeft:pressed
+{
+border-image: url(:/res/res/image/left_arrow_pressed.png);
+}
+
+QPushButton#pushButtonRight
+{
+border-image: url(:/res/res/image/right_arrow_normal.png);
+}
+
+QPushButton#pushButtonRight:hover
+{
+border-image: url(:/res/res/image/right_arrow_hover.png);
+}
+
+QPushButton#pushButtonRight:pressed
+{
+border-image: url(:/res/res/image/right_arrow_pressed.png);
+}
+
+/********************** SystemTray Style Sheet  *******************/
+QMenu
+{
+background-color: white;
+border: 1px solid white;
+}
+QMenu::item
+{
+background-color: transparent;
+padding:8px 32px;
+margin:0px 0px;
+border-bottom:1px solid #DBDBDB;
+}
+QMenu::item:selected
+{
+background-color: #2dabf9;
+}
+
+/********************** ProcessControl Style Sheet  *******************/
+QFrame#frameProcess
+{
+background:transparent;
+border:1px solid rgb(255, 220, 220);
+border-radius: 4px;
+}
+
+/********************** ListControl Style Sheet  *******************/
+QFrame#frameLine
+{
+background: rgba(255, 220, 220, 40);
+}
+
+QLabel#labelAppName
+{
+font-family: Microsoft YaHei;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+QLabel#labelAppText
+{
+font-family: Microsoft YaHei;
+font-size: 12px;
+color: #AAAAAA;
+}
 
