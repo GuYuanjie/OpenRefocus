@@ -1,0 +1,156 @@
+﻿/*****************************************
+ * 作者: YYC
+ * 日期: 2021-01-07
+ * 功能：创建闪屏
+ * ***************************************/
+#include "splashscreen.h"
+#include <QPainter>
+#include <QTimer>
+#include <QApplication>
+#include <QGuiApplication>
+#include <QDebug>
+#include "numberanimation/numberanimation.h"
+
+SplashScreen *SplashScreen::m_instance = nullptr;
+
+
+SplashScreen::SplashScreen(const QPixmap &pixmap)
+    : QSplashScreen(pixmap)
+    , m_percent(0)
+    , m_mainWidget(nullptr)
+    , m_propertyAnimation(nullptr)
+{
+}
+
+
+SplashScreen::~SplashScreen()
+{
+
+}
+
+
+SplashScreen *SplashScreen::getInstance()
+{
+    if(nullptr == m_instance)
+    {
+        m_instance = new SplashScreen(QPixmap(":/res/res/image/other/splash.png"));
+    }
+    return m_instance;
+}
+
+
+void SplashScreen::paintEvent(QPaintEvent *event)
+{
+    Q_UNUSED(event);
+
+    const int OFFSET_VALUE = 70;
+    const int SLIDER_HEIGHT = 10;
+    const int BORDER_X_RADIUS = 8;
+    const int BORDER_Y_RADIUS = 4;
+
+    QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing);
+    QFont font(QString("微软雅黑"));
+    QPen painterPen;
+    painterPen.setColor(Qt::black);
+    painter.setPen(painterPen);
+    QBrush brush(QColor(100, 100, 100 ,255));
+    painter.setBrush(brush);
+    painter.drawRoundedRect(OFFSET_VALUE, this->height() - OFFSET_VALUE
+                            ,(this->width()- OFFSET_VALUE * 2)
+                            ,BORDER_X_RADIUS,BORDER_Y_RADIUS,SLIDER_HEIGHT);
+
+    {
+        font.setPixelSize(16);
+        font.setBold(true);
+        painter.setFont(font);
+        painterPen.setColor(QColor(0, 0, 0 ,255));
+        painter.setPen(painterPen);
+        painter.drawText(0, this->height()- OFFSET_VALUE * 2, this->width(), OFFSET_VALUE, Qt::AlignCenter, m_message);
+    }
+
+
+    {
+        painterPen.setColor(Qt::black);
+        painter.setPen(painterPen);
+        if(m_percent != 0)
+        {
+            QBrush brush(QColor(255, 255, 255 ,255));
+            painter.setBrush(brush);
+            painter.drawRoundedRect(OFFSET_VALUE, this->height() - OFFSET_VALUE
+                                    , (this->rect().width()- OFFSET_VALUE * 2) * m_percent / 100
+                                    , BORDER_X_RADIUS,BORDER_Y_RADIUS,SLIDER_HEIGHT);
+        }
+    }
+
+
+    {
+        font.setPixelSize(14);
+        font.setBold(false);
+        painter.setFont(font);
+        painterPen.setColor(Qt::black);
+        painter.setPen(painterPen);
+        QString drawText = QString::number(m_percent,'f',0) + QString("%");
+        painter.drawText(0, this->height() - OFFSET_VALUE, this->width(), OFFSET_VALUE, Qt::AlignCenter, drawText);
+        painter.end();
+    }
+
+
+}
+
+
+
+void SplashScreen::setStagePercent(const int &percent, const QString &message)
+{
+    if(this->isHidden())
+    {
+        this->show();
+    }
+    if(!this->isActiveWindow())
+    {
+        this->activateWindow();
+        this->raise();
+    }
+    m_message = message;
+
+    while (m_percent < percent)
+    {
+        m_percent = m_percent + 0.02;
+        qApp->processEvents();
+        this->repaint();
+    }
+}
+
+
+void SplashScreen::setStart(QWidget *widget, const QString &title, const QString &logoFile)
+{
+    if (nullptr != widget)
+    {
+        m_mainWidget = widget;
+        m_pixLogo = QPixmap(logoFile);
+        m_textLogo = title;
+        m_mainWidget->setWindowOpacity(0.0);
+        if (nullptr == m_propertyAnimation)
+        {
+            m_propertyAnimation = new QPropertyAnimation(m_mainWidget, "windowOpacity");
+            m_propertyAnimation->setDuration(ANIMATION_DURATION);
+            m_propertyAnimation->setStartValue(0.0);
+            m_propertyAnimation->setEndValue(1.0);
+        }
+    }
+}
+
+
+void SplashScreen::setFinish()
+{
+    this->close();
+    if (nullptr != m_mainWidget)
+    {
+        m_mainWidget->activateWindow();
+        m_mainWidget->raise();
+    }
+    if (nullptr != m_propertyAnimation)
+    {
+        m_propertyAnimation->start();
+    }
+}
