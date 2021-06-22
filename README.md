@@ -44,7 +44,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 # Demo-Preview
 
 <!-- Add a demo for your project -->
-![OpenRefocus](https://github.com/GuYuanjie/git-imgs/blob/main/OpenRefocus/%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E5%9B%BEV2.png?raw=true)
+![OpenRefocus](https://raw.githubusercontent.com/GuYuanjie/git-imgs/main/OpenRefocus/%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E5%9B%BEV2.png)
 <!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.-->
 
 # Table of contents
