@@ -53,7 +53,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
+- [OpenRefocus](#OpenRefocus)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
