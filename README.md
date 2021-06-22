@@ -136,15 +136,28 @@ Ideally, you should keep the README simple. If you need to add more complex expl
 
 
 # License
-[(Back to top)](#table-of-contents)
+```MIT License
 
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
+Copyright (c) 2021 Yuanjie Gu
 
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-I personally add the name of the license and provide a link to it like below. -->
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 # Footer
 [(Back to top)](#table-of-contents)
