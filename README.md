@@ -1,3 +1,4 @@
+![](http://www.baidu.com/img/bdlogo.gif)  
 ![](https://github.com/GuYuanjie/git-imgs/raw/master/OpenRefocus/ico.png)
 # OpenRefocus
 ## Introduction
