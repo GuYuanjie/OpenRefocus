@@ -50,7 +50,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 
 
-![OpenRefocus](https://raw.githubusercontent.com/GuYuanjie/git-imgs/main/OpenRefocus/%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E5%9B%BEV2.png) -->
+![OpenRefocus](https://raw.githubusercontent.com/GuYuanjie/git-imgs/main/OpenRefocus/%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E5%9B%BEV2.png)
 
 # Table of contents
 
