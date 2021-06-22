@@ -63,7 +63,6 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Footer](#footer)
 
 # Installation
-[(Back to top)](#table-of-contents)
 
 <!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
@@ -111,12 +110,20 @@ SM72 or SM_72, compute_72 – currently unknown
 ```
 
 # Usage
-[(Back to top)](#table-of-contents)
-
-<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
+>>1. Import micro-lens coords, ours Lytro Illum demo .txt files are in `./OpenRefocusSourceCode/cameraData/`
+>>2. Import light field image, ours Lytro Illum demo images files are in `./OpenRefocusSourceCode/imageData/`
+>>3. Type parameters
+>>>>imgHeight: refocusing image height, default `434` for ours Lytro Illum.
+>>>>imgWidth: refocusing image height, default `541` for ours Lytro Illum.
+>>>>radius: micro-lens radius, default `7` for ours Lytro Illum.
+>>>>depthResolution: how much refocusing images u want, often `256`.
+>>>>alphaMin： alpha range, default `0.2`. 
+>>>>alphaMax:  alpha range, default `2`. 
+>>3. Refocusing, choose CPU or GPU mode
+>>4. Display, drug the slider or click on the area where u interest
+>>5. Save and Reboot
 
 # Development
-[(Back to top)](#table-of-contents)
 
 <!-- This is the place where you give instructions to developers on how to modify the code.
 
