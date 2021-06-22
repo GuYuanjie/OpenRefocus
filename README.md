@@ -59,9 +59,6 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-- [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
 - [Footer](#footer)
 
@@ -85,8 +82,32 @@ To use this project, first clone the repo on your device using the command below
 ```git init```
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
-## Download PackingCompression and unpack the rar file
+
+## If you want to use CPU mode or use GPU mode with GTX-1050Ti Download PackingCompression and unpack the rar files directly
 >Because of the upload restriction, the program is divided into volumes in `PackingCompression.part1.rar` and `PackingCompression.part2.rar`.
+## If you want to use GPU mode with more version GPUs, reconfigure CUDA setting in the `.pro` file 
+> ```Fermi (CUDA 3.2 and later, deprecated from CUDA 9):
+SM20 or SM_20, compute_30 – Older cards such as GeForce 400, 500, 600, GT-630
+Kepler (CUDA 5 and later):
+SM30 or SM_30, compute_30 – Kepler architecture (generic – Tesla K40/K80, GeForce 700, GT-730)
+Adds support for unified memory programming
+SM35 or SM_35, compute_35 – More specific Tesla K40
+Adds support for dynamic parallelism. Shows no real benefit over SM30 in my experience.
+SM37 or SM_37, compute_37 – More specific Tesla K80
+Adds a few more registers. Shows no real benefit over SM30 in my experience
+Maxwell (CUDA 6 and later):
+SM50 or SM_50, compute_50 – Tesla/Quadro M series
+SM52 or SM_52, compute_52 – Quadro M6000 , GeForce 900, GTX-970, GTX-980, GTX Titan X
+SM53 or SM_53, compute_53 – Tegra (Jetson) TX1 / Tegra X1
+Pascal (CUDA 8 and later)
+SM60 or SM_60, compute_60 – GP100/Tesla P100 – DGX-1 (Generic Pascal)
+SM61 or SM_61, compute_61 – GTX 1080, GTX 1070, GTX 1060, GTX 1050, GTX 1030, Titan Xp, Tesla P40, Tesla P4
+SM62 or SM_62, compute_62 – Drive-PX2, Tegra (Jetson) TX2, Denver-based GPU
+Volta (CUDA 9 and later)
+SM70 or SM_70, compute_70 – Tesla V100
+SM71 or SM_71, compute_71 – probably not implemented
+SM72 or SM_72, compute_72 – currently unknown```
+
 # Usage
 [(Back to top)](#table-of-contents)
 
@@ -103,32 +124,7 @@ You could also give specific instructions to how they can setup their developmen
 
 Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
 
-# Contribute
-[(Back to top)](#table-of-contents)
 
-<!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
-
-Also this shows how you can add subsections within a section. -->
-
-### Sponsor
-[(Back to top)](#table-of-contents)
-
-<!-- Your project is gaining traction and it is being used by thousands of people(***with this README there will be even more***). Now it would be a good time to look for people or organisations to sponsor your project. This could be because you are not generating any revenue from your project and you require money for keeping the project alive.
-
-You could add how people can sponsor your project in this section. Add your patreon or GitHub sponsor link here for easy access.
-
-A good idea is to also display the sponsors with their organisation logos or badges to show them your love!(*Someday I will get a sponsor and I can show my love*) -->
-
-### Adding new features or fixing bugs
-[(Back to top)](#table-of-contents)
-
-<!-- This is to give people an idea how they can raise issues or feature requests in your projects. 
-
-You could also give guidelines for submitting and issue or a pull request to your project.
-
-Personally and by standard, you should use a [issue template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/ISSUE_TEMPLATE.md) and a [pull request template](https://github.com/navendu-pottekkat/nsfw-filter/blob/master/PULL_REQ_TEMPLATE.md)(click for examples) so that when a user opens a new issue they could easily format it as per your project guidelines.
-
-You could also add contact details for people to get in touch with you regarding your project. -->
 
 # License
 [(Back to top)](#table-of-contents)
