@@ -120,7 +120,7 @@ SM72 or SM_72, compute_72 – currently unknown
 >>>alphaMin： alpha range, default `0.2`.  
 >>>alphaMax:  alpha range, default `2`.  
 >>3. Refocusing, choose CPU or GPU mode
->>4. Display, drug the slider or click on the area where u interest
+>>4. Display, drag the slider or click on the area where u interest
 >>5. Save and Reboot
 
 # Development
