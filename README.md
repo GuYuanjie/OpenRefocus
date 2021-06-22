@@ -136,7 +136,8 @@ Ideally, you should keep the README simple. If you need to add more complex expl
 
 
 # License
-```MIT License
+```
+MIT License
 
 Copyright (c) 2021 Yuanjie Gu
 
