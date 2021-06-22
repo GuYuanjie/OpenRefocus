@@ -86,7 +86,8 @@ To use this project, first clone the repo on your device using the command below
 ## If you want to use CPU mode or use GPU mode with GTX-1050Ti Download PackingCompression and unpack the rar files directly
 >Because of the upload restriction, the program is divided into volumes in `PackingCompression.part1.rar` and `PackingCompression.part2.rar`.
 ## If you want to use GPU mode with more version GPUs, reconfigure CUDA setting in the `.pro` file 
-```Fermi (CUDA 3.2 and later, deprecated from CUDA 9):
+```
+Fermi (CUDA 3.2 and later, deprecated from CUDA 9):
 SM20 or SM_20, compute_30 – Older cards such as GeForce 400, 500, 600, GT-630
 Kepler (CUDA 5 and later):
 SM30 or SM_30, compute_30 – Kepler architecture (generic – Tesla K40/K80, GeForce 700, GT-730)
@@ -106,7 +107,8 @@ SM62 or SM_62, compute_62 – Drive-PX2, Tegra (Jetson) TX2, Denver-based GPU
 Volta (CUDA 9 and later)
 SM70 or SM_70, compute_70 – Tesla V100
 SM71 or SM_71, compute_71 – probably not implemented
-SM72 or SM_72, compute_72 – currently unknown```
+SM72 or SM_72, compute_72 – currently unknown
+```
 
 # Usage
 [(Back to top)](#table-of-contents)
