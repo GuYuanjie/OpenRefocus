@@ -82,7 +82,7 @@ To use this project, first clone the repo on your device using the command below
 
 ```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
 
-## If you want to use CPU mode or use GPU mode with GTX-1050Ti Download PackingCompression and unpack the rar files directly
+## If you want to use CPU mode or use GPU mode with GTX-1050Ti Download OpenRefocusRelease and open OpenRefocus.exe
 >Because of the upload restriction, the program is divided into volumes in `PackingCompression.part1.rar` and `PackingCompression.part2.rar`.
 ## If you want to use GPU mode with more version GPUs, reconfigure CUDA setting in the `.pro` file 
 ```
