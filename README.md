@@ -168,6 +168,7 @@ SOFTWARE.
 Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
 
 Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
+For anything, please contact email `yuanjie_gu@163.com`
 
 <!-- Add the footer here -->
 
